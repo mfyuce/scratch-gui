@@ -24,6 +24,11 @@ import microbitInsetIconURL from './microbit/microbit-small.svg';
 import microbitConnectionIconURL from './microbit/microbit-illustration.svg';
 import microbitConnectionSmallIconURL from './microbit/microbit-small.svg';
 
+import ardunioIconURL from './ardunio/ardunio.png';
+import ardunioInsetIconURL from './ardunio/ardunio-small.svg';
+import ardunioConnectionIconURL from './ardunio/ardunio-illustration.svg';
+import ardunioConnectionSmallIconURL from './ardunio/ardunio-small.svg';
+
 import ev3IconURL from './ev3/ev3.png';
 import ev3InsetIconURL from './ev3/ev3-small.svg';
 import ev3ConnectionIconURL from './ev3/ev3-hub-illustration.svg';
@@ -195,6 +200,36 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/microbit'
+    },
+    {
+        name: 'ardunio',
+        extensionId: 'ardunio',
+        collaborator: 'ardunio',
+        iconURL: ardunioIconURL,
+        insetIconURL: ardunioInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect your projects with the world."
+                description="Description for the 'ardunio' extension"
+                id="gui.extension.ardunio.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: ardunioConnectionIconURL,
+        connectionSmallIconURL: ardunioConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their ardunio."
+                id="gui.extension.ardunio.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/ardunio'
     },
     {
         name: 'LEGO MINDSTORMS EV3',
