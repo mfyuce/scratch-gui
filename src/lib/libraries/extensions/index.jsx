@@ -24,10 +24,10 @@ import microbitInsetIconURL from './microbit/microbit-small.svg';
 import microbitConnectionIconURL from './microbit/microbit-illustration.svg';
 import microbitConnectionSmallIconURL from './microbit/microbit-small.svg';
 
-import ardunioIconURL from './ardunio/ardunio.png';
-import ardunioInsetIconURL from './ardunio/ardunio-small.svg';
-import ardunioConnectionIconURL from './ardunio/ardunio-illustration.svg';
-import ardunioConnectionSmallIconURL from './ardunio/ardunio-small.svg';
+import arduinoIconURL from './arduino/arduino.png';
+import arduinoInsetIconURL from './arduino/arduino-small.svg';
+import arduinoConnectionIconURL from './arduino/arduino-illustration.svg';
+import arduinoConnectionSmallIconURL from './arduino/arduino-small.svg';
 
 import ev3IconURL from './ev3/ev3.png';
 import ev3InsetIconURL from './ev3/ev3-small.svg';
@@ -50,7 +50,7 @@ import gdxforIconURL from './gdxfor/gdxfor.png';
 import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
-
+ 
 export default [
     {
         name: (
@@ -202,16 +202,16 @@ export default [
         helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
-        name: 'ardunio',
-        extensionId: 'ardunio',
-        collaborator: 'ardunio',
-        iconURL: ardunioIconURL,
-        insetIconURL: ardunioInsetIconURL,
+        name: 'arduino',
+        extensionId: 'arduino',
+        collaborator: 'arduino',
+        iconURL: arduinoIconURL,
+        insetIconURL: arduinoInsetIconURL,
         description: (
             <FormattedMessage
                 defaultMessage="Connect your projects with the world."
-                description="Description for the 'ardunio' extension"
-                id="gui.extension.ardunio.description"
+                description="Description for the 'arduino' extension"
+                id="gui.extension.arduino.description"
             />
         ),
         featured: true,
@@ -220,16 +220,16 @@ export default [
         internetConnectionRequired: true,
         launchPeripheralConnectionFlow: true,
         useAutoScan: false,
-        connectionIconURL: ardunioConnectionIconURL,
-        connectionSmallIconURL: ardunioConnectionSmallIconURL,
+        connectionIconURL: arduinoConnectionIconURL,
+        connectionSmallIconURL: arduinoConnectionSmallIconURL,
         connectingMessage: (
             <FormattedMessage
                 defaultMessage="Connecting"
-                description="Message to help people connect to their ardunio."
-                id="gui.extension.ardunio.connectingMessage"
+                description="Message to help people connect to their arduino."
+                id="gui.extension.arduino.connectingMessage"
             />
         ),
-        helpLink: 'https://scratch.mit.edu/ardunio'
+        helpLink: 'https://scratch.mit.edu/arduino'
     },
     {
         name: 'LEGO MINDSTORMS EV3',
@@ -352,5 +352,5 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    }  
 ];
