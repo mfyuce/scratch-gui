@@ -202,9 +202,9 @@ export default [
         helpLink: 'https://scratch.mit.edu/microbit'
     },
     {
-        name: 'arduino',
-        extensionId: 'arduino',
-        collaborator: 'arduino',
+        name: 'pinoo',
+        extensionId: 'pinoo',
+        collaborator: 'pinoo',
         iconURL: arduinoIconURL,
         insetIconURL: arduinoInsetIconURL,
         description: (
