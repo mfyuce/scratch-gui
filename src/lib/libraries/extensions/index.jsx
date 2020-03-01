@@ -232,6 +232,36 @@ export default [
         helpLink: 'https://scratch.mit.edu/arduino'
     },
     {
+        name: 'pinoosimulator',
+        extensionId: 'pinoosimulator',
+        collaborator: 'pinoosimulator',
+        iconURL: arduinoIconURL,
+        insetIconURL: arduinoInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect your projects with the world."
+                description="Description for the 'arduino' extension"
+                id="gui.extension.arduino.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: false,
+        connectionIconURL: arduinoConnectionIconURL,
+        connectionSmallIconURL: arduinoConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their arduino."
+                id="gui.extension.arduino.connectingMessage"
+            />
+        ),
+        helpLink: 'https://scratch.mit.edu/arduino'
+    },
+    {
         name: 'LEGO MINDSTORMS EV3',
         extensionId: 'ev3',
         collaborator: 'LEGO',
